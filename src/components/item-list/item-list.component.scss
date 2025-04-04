@@ -1,0 +1,39 @@
+.ItemList {
+  height: 300px;
+  width: 500px;
+  overflow-y: auto;
+  margin-top: 0.3rem;
+
+  & li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-bottom: 2px solid rgb(245, 245, 245);
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  &__done {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 24px;
+  }
+
+  &__text-active {
+    font-size: 24px;
+
+    text-decoration: line-through;
+    color: rgb(220, 220, 220);
+  }
+}
